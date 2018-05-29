@@ -428,20 +428,26 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
-.menu li {
-  border-right: 1px solid #fff;
-  line-height: 1; }
-
-.menu li:nth-child(1) {
-  padding-right: 1rem; }
-
-.menu li:nth-child(2) {
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
-.menu li:nth-last-child(1) {
-  border-right: none;
-  padding-left: 1rem; }
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4.5rem 0 3rem;
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
+  .menu li {
+    border-right: 1px solid #fff;
+    line-height: 1; }
+  .menu li:nth-child(1) {
+    padding-right: 1rem; }
+  .menu li:nth-child(2) {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .menu li:nth-last-child(1) {
+    border-right: none;
+    padding-left: 1rem; }
 
 /* Menus */
 .main-navigation {
@@ -485,11 +491,15 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 620px) {
   .menu-toggle {
-    display: none; }
+    display: block; }
   .main-navigation ul {
-    display: block; } }
+    display: block; }
+  .menu li:nth-last-child(1) {
+    border-right: 1px solid white;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -571,6 +581,12 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.body {
+  color: #fff;
+  font-family: Exo Web,sans-serif;
+  font-size: 1rem;
+  line-height: 1.5; }
+
 .sticky {
   display: block; }
 
@@ -595,10 +611,10 @@ a {
           flex-direction: row;
   text-align: center; }
 
-.home, .single-post {
+.home, .single-post, .page-id-107 {
   background-color: black; }
 
-.type-post {
+.type-post, .type-page {
   color: #fff;
   font-family: Exo Web,sans-serif;
   font-size: 1rem;
@@ -621,12 +637,29 @@ a {
   content: "\f10e";
   right: 300px; }
 
+.button {
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: .75rem 2.25rem; }
+
+.logo {
+  text-align: center; }
+
 .entry-summary {
   margin: 1.5rem 0 0; }
 
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+@media (min-width: 620px) {
+  .entry-content p {
+    font-size: 1.75rem; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -650,19 +683,28 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
-.logo-quotes {
-  background-image: url("../../qod-logo.svg");
-  width: 408px;
-  height: 70px;
-  background-repeat: no-repeat;
-  margin-top: 120px; }
+.logo {
+  margin-top: 15px;
+  text-align: left; }
+  @media (min-width: 1080px) {
+    .logo {
+      text-align: center; } }
+  .logo .logo-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .logo img {
+    width: 300px; }
+    @media (min-width: 620px) {
+      .logo img {
+        width: 500px; } }
+    @media (min-width: 1080px) {
+      .logo img {
+        width: 700px; } }
 
-.logo-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 1080px;
-  min-width: 1080px; }
+.page-header .page-title {
+  font-size: 2em; }

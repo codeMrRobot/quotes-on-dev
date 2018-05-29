@@ -32,6 +32,11 @@ a {
 }
 
 .menu{
+	
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4.5rem 0 3rem;
+	align-content: flex-end;
 
 	li{
 		border-right: 1px solid #fff;
@@ -128,12 +133,19 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 620px) {
 	.menu-toggle {
-		display: none;
+		display: block;
 	}
 	.main-navigation ul {
 		display: block;
+	}
+	.menu{
+		li:nth-last-child(1){
+			border-right:1px solid white;
+			padding-left:1rem;
+			padding-right:1rem;
+		}
 	}
 }
 
