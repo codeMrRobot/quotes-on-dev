@@ -417,6 +417,32 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4.5rem 0 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.menu li {
+  border-right: 1px solid #fff;
+  line-height: 1; }
+
+.menu li:nth-child(1) {
+  padding-right: 1rem; }
+
+.menu li:nth-child(2) {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.menu li:nth-last-child(1) {
+  border-right: none;
+  padding-left: 1rem; }
+
 /* Menus */
 .main-navigation {
   clear: both;
@@ -558,8 +584,43 @@ a {
 .group-blog .byline {
   display: inline; }
 
-.page-content,
-.entry-content,
+.page-content
+.entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center; }
+
+.home, .single-post {
+  background-color: black; }
+
+.type-post {
+  color: #fff;
+  font-family: Exo Web,sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center; }
+
+.entry-content:before, .entry-content:after {
+  color: #0c0;
+  font-family: FontAwesome;
+  font-size: 125px;
+  line-height: 125px;
+  position: absolute;
+  top: 300px; }
+
+.entry-content:before {
+  content: "\f10d";
+  left: 300px; }
+
+.entry-content:after {
+  content: "\f10e";
+  right: 300px; }
+
 .entry-summary {
   margin: 1.5rem 0 0; }
 
@@ -589,3 +650,19 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.logo-quotes {
+  background-image: url("../../qod-logo.svg");
+  width: 408px;
+  height: 70px;
+  background-repeat: no-repeat;
+  margin-top: 120px; }
+
+.logo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1080px;
+  min-width: 1080px; }

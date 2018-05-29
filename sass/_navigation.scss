@@ -24,6 +24,33 @@ a {
 	}
 }
 
+.site-info{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4.5rem 0 3rem;
+	align-items:center;
+}
+
+.menu{
+
+	li{
+		border-right: 1px solid #fff;
+		line-height:1;
+	}
+	li:nth-child(1){
+	padding-right:1rem;
+	}
+	li:nth-child(2){
+	padding-left:1rem;
+	padding-right:1rem;
+	}
+	li:nth-last-child(1){
+		border-right:none;
+		padding-left:1rem;
+	}
+
+}
+
 /* Menus */
 
 .main-navigation {

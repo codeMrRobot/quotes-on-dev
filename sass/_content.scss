@@ -21,8 +21,47 @@
 	display: inline;
 }
 
-.page-content,
-.entry-content,
+.page-content
+
+.entry-content{
+	display:flex;
+	flex-direction: row;
+	text-align:center;
+}
+
+.home,.single-post{
+	background-color:black;
+}
+
+.type-post{
+	color: #fff;
+	font-family: Exo Web,sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align:center;
+}
+
+.entry-content:before, .entry-content:after{
+	color: #0c0;
+	font-family: FontAwesome;
+	font-size: 125px;
+	line-height: 125px;
+	position: absolute;
+	top: 300px;
+}
+
+.entry-content:before {
+	 content: "\f10d";
+	left: 300px;
+}
+
+.entry-content:after{
+	 content: "\f10e";
+	right: 300px;
+}
+
+
+
 .entry-summary {
 	margin: $base__space-unit 0 0;
 }
