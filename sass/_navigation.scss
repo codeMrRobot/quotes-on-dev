@@ -25,10 +25,28 @@ a {
 }
 
 .site-info{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 4.5rem 0 3rem;
-	align-items:center;
+  width: 300px;
+  margin-bottom: 60px;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.red{
+	color:#fff;
+	a{
+		text-decoration: none;
+	}
+}
+
+.footer_navigation ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+	margin: 0;
 }
 
 .menu{
@@ -54,6 +72,27 @@ a {
 		padding-left:1rem;
 	}
 
+}
+
+.entry-meta{
+	display:inline;
+	font-size:1.25rem;
+	h2{
+		display:inline;
+		font-size:1.25rem;
+		margin:0;
+	}
+}
+
+.author-source-container{
+	display:inline;
+	font-size:1.25rem;
+	p{
+		display: inline;
+	}
+	a{
+		padding-left:1rem;
+	}
 }
 
 /* Menus */
@@ -84,6 +123,7 @@ a {
 			}
 
 			li {
+				margin-left:30px;
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -124,6 +164,28 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+	}
+}
+
+/* Links */
+
+a {
+	color: $green;
+
+	&:visited {
+		color: $green;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $green;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
 	}
 }
 

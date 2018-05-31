@@ -1,43 +1,79 @@
 (function($) {
+
+  var lastPage='';
   $('#new-quote-button').on('click', function(event) {
-      event.preventDefault();
-      
-      /**
-       * source https://css-tricks.com/using-the-wp-api-to-fetch-posts/ 05/26/2018
-       */
-      $.ajax({
-          method: 'GET',
-          url: qod_vars.rest_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
-          success: function ( data ) {
-              var quote = data[0].content.rendered;
-              var author = data[0].title.rendered;
-              var quote_Source = data[0]._qod_quote_source;
-              var quote_Source_url = data[0]._qod_quote_source_url;
+    event.preventDefault();
 
-              $( '#quote-author' ).text(author);
-              $( '#quote-text' ).html(quote);
+    $.ajax( {
+      url: '/quotes_on_dev/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      success: function( data ) {
 
-              if (quote_Source) {
-                  if (quote_Source_url) {
-                      $('#quote-source').html(', <a href="' + quote_Source_url + '" target="_blank">' + quote_Source + '</a>');
-                  }
-                  else {
-                      $('#quote-source').text(', ' + quote_Source);
-                  }
-              }
-              else {
-                  $('#quote-source').html('');
-              }
-          },
-          cache: false
-      });
+        //returns first post from the array
+        var post = data.shift();
+        
+        //replace current quote with the new quote
+        $('.entry-content').html( post.content.rendered );
+        $( '.entry-title' ).html( '&mdash; ' + post.title.rendered );
 
-  });
+        //if source is available, output it, else output an empty string
+        if ( post._qod_quote_source !== '' && post._qod_quote_source_url !== '') {
+          $( '.source' ).html(', <a href="' + post._qod_quote_source_url + '">' + post._qod_quote_source + '</a>');
+        
+        } 
+        else if (post._qod_quote_source !== '') {
+          $( '.source' ).text(', ' + post._qod_quote_source);
+        }
 
+        else {
+          $( '.source' ).text('');
+        }
+
+        history.pushState(null, null, post.link);
+        console.log(post.link);
+      }
+    
+    })
   
+  })
 
+  $('#submit-quote').on('click', function(event) {
+    event.preventDefault();
 
+    var author = $('#author').val();
+    var quote = $('#quote').val();
+    var source = $('#source').val();
+    var url = $('#url').val();
 
+    var data = {
+        title: author,
+        content: quote,
+        _qod_quote_source: source,
+        _qod_quote_source_url: url,
+        status: 'publish'
+    };
+
+    $.ajax({
+        method: 'POST',
+        url: qod_vars.rest_url + 'wp/v2/posts',
+        data: data,
+        beforeSend: function ( xhr ) {
+            xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.wpapi_nonce );
+        },
+        success : function() {
+            alert( 'Your quote has been successfully added!' );
+        },
+        fail : function() {
+            alert( ' There was an error while adding your quote. ');
+        }
+
+    });
+
+    $('#author').val('');
+    $('#quote').val('');
+    $('#source').val('');
+    $('#url').val('');
+
+});
 
 
 })(jQuery);
