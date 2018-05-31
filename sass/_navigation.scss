@@ -25,12 +25,14 @@ a {
 }
 
 .site-info{
-  width: 300px;
-  margin-bottom: 60px;
-  margin-left: 0;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+	width: 300px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4.5rem 0 3rem;
+	
 }
 
 .red{
@@ -47,6 +49,12 @@ a {
   justify-content: flex-start;
   padding: 0;
 	margin: 0;
+}
+
+.footer_navigation li {
+	border-right: 1px solid #fff;
+	line-height: 1;
+	padding: 0 1rem;
 }
 
 .menu{
@@ -178,7 +186,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $green;
+		color: #090;
 	}
 	&:focus {
 		outline: thin dotted;

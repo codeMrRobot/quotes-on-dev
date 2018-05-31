@@ -398,7 +398,7 @@ a {
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: #00cc00; }
+    color: #090; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -407,15 +407,14 @@ a {
 .site-info {
   width: 300px;
   margin-bottom: 60px;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin: 4.5rem 0 3rem; }
 
 .red {
   color: #fff; }
@@ -437,6 +436,11 @@ a {
           justify-content: flex-start;
   padding: 0;
   margin: 0; }
+
+.footer_navigation li {
+  border-right: 1px solid #fff;
+  line-height: 1;
+  padding: 0 1rem; }
 
 .menu {
   display: -webkit-box;
@@ -520,7 +524,7 @@ a {
   a:visited {
     color: #0c0; }
   a:hover, a:focus, a:active {
-    color: #0c0; }
+    color: #090; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -652,13 +656,6 @@ a {
           flex-direction: row;
   text-align: center; }
 
-.type-post, .type-page {
-  color: #fff;
-  font-family: Exo Web,sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: center; }
-
 .logo {
   text-align: center; }
 
@@ -704,6 +701,10 @@ body {
     .site-branding a img {
       width: 700px;
       padding-top: 0; }
+  .site-info {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .site-content:before {
     position: absolute;
     left: -25%;
@@ -724,9 +725,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;

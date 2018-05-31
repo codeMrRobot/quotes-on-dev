@@ -27,7 +27,7 @@
 </div>
 
 							
-				<p class ="red">Brought to you by Tony Tran<a href="http://www.redacademy.com/">RED Academy</a></p>
+				<p class ="red">Brought to you by<a href="http://www.redacademy.com/">RED Academy</a></p>
 			</div><!-- .site-info -->
 					
 				

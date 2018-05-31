@@ -36,15 +36,6 @@
 	text-align:center;
 }
 
-
-.type-post,.type-page{
-	color: #fff;
-	font-family: Exo Web,sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
-	text-align:center;
-}
-
 .logo{
 	text-align: center;
 }
@@ -132,6 +123,10 @@ body{
 		}
 	}
 
+	.site-info{
+		justify-content: flex-end;
+	}
+
 
 	.site-content:before{
 		position: absolute;
@@ -153,7 +148,6 @@ body{
 	}
 	.site-footer{
 		display:flex;
-		justify-content: flex-end;
 		flex-direction:row-reverse;
 	}
 	.entry-content{
