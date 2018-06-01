@@ -219,9 +219,6 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -389,6 +386,57 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.quote-source-url-box {
+  padding-bottom: 2rem;
+  margin-bottom: 1rem; }
+
+.quote-author-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.quote-submission-wrapper div:nth-child(-n+4) {
+  padding-bottom: 1rem; }
+  .quote-submission-wrapper div:nth-child(-n+4) input:nth-child(-n+4) {
+    margin-top: 1rem; }
+
+.search-submit {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #0c0;
+  padding: 0;
+  padding-left: 1rem; }
+
+.search-box {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+@media screen and (min-width: 620px) {
+  .quote-source-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .quote-source-url-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .quote-submission-wrapper input:nth-child(-n+4) {
+    width: 60%; } }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -405,7 +453,7 @@ a {
     outline: 0; }
 
 .site-info {
-  width: 300px;
+  width: 530px;
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: 0;
@@ -483,8 +531,7 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  width: 1000px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -679,7 +726,7 @@ body {
 
 @media (min-width: 620px) {
   .red {
-    margin: 0;
+    margin: -4px;
     padding-left: 1rem; }
   .entry-content p {
     font-size: 1.75rem; }
@@ -687,6 +734,9 @@ body {
     font-size: 1.6rem; }
   .site-branding a img {
     width: 500px; }
+  .site-info {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
   .page .entry-content {
     font-size: 1rem; } }
 
@@ -760,11 +810,6 @@ iframe,
 object {
   max-width: 100%; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* All Archives Page */
-/* Submit a Quote Page */
 .logo {
   margin-top: 15px;
   text-align: left; }

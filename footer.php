@@ -11,6 +11,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
+					<span class="menu-stuff">
 				<div id="site-navigation" class="main-navigation" role="navigation">
 				<?php 
 					wp_nav_menu(
@@ -27,7 +28,8 @@
 </div>
 
 							
-				<p class ="red">Brought to you by<a href="http://www.redacademy.com/">RED Academy</a></p>
+				<p class ="red">Brought to you by <a href="http://www.redacademy.com/">RED Academy</a></p>
+	</span>
 			</div><!-- .site-info -->
 					
 				
