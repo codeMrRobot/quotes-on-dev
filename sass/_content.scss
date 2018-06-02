@@ -31,9 +31,7 @@
 .entry-content,
 .entry-summary{
 	margin: $base__space-unit 0 0;
-	display:flex;
 	flex-direction: row;
-	text-align:center;
 }
 
 .logo{
@@ -54,16 +52,9 @@
 body{
 	background-color:$background;
 	padding: .5rem;
-	font-family:$exo_font;
+	font-family:"Exo-Light";
 
 }
-
-// .site-content{
-// 	margin: 0 auto;
-// 	max-width: 1080px;
-// 	padding: 0.5rem;
-// 	width:100%;
-// }
 
 .site-main{
 	color:$text;
@@ -99,7 +90,7 @@ body{
 		}
 	
 		// about page//
-		.page{
+		.page-id-107{
 			.entry-content{
 				font-size:1rem;
 			}
@@ -108,6 +99,12 @@ body{
 }
 
 @media (min-width: 1080px){
+
+	.page-id-107{
+		.entry-content{
+			font-size:1rem;
+		}
+	}
 
 	.site-content{
 		
@@ -173,4 +170,9 @@ body{
 	font-size:2rem;
 	border-bottom:1px dotted white;
 	padding-bottom:2rem;
+}
+.single-post,.entry-title{
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: 400;    
 }

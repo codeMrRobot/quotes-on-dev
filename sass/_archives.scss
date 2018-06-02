@@ -9,11 +9,20 @@
     list-style: none;
     li{
       
-      padding-right:1rem;
+      padding-right:1.5rem;
+      font-size: 1.25rem;
       a{
         text-decoration: none;
         
       }
     }
    }
+}
+
+.single-post{
+  entry-title{
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: 400;    
+  }
 }

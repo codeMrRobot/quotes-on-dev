@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: "Exo-Light";
+  src: url("../../build/fonts/Exo-Light.eot"), /* IE9 Compat Modes */
+       url("../../build/fonts/Exo-Light.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../../build/fonts/Exo-Light.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../../build/fonts/Exo-Light.ttf")  format("truetype"), /* Safari, Android, iOS */
+       url("../../build/fonts/Exo-Light.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Exo-LightItalic";
+  src: url("../../build/fonts/Exo-LightItalic.eot"), /* IE9 Compat Modes */
+       url("../../build/fonts/Exo-LightItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../../build/fonts/Exo-LightItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../../build/fonts/Exo-LightItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+       url("../../build/fonts/Exo-LightItalic.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Exo-Medium";
+  src: url("../../build/fonts/Exo-Medium.eot"), /* IE9 Compat Modes */
+       url("../../build/fonts/Exo-Medium.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../../build/fonts/Exo-Medium.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../../build/fonts/Exo-Medium.ttf")  format("truetype"), /* Safari, Android, iOS */
+       url("../../build/fonts/Exo-Medium.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Exo-MediumItalic";
+  src: url("../../build/fonts/Exo-MediumItalic.eot"), /* IE9 Compat Modes */
+       url("../../build/fonts/Exo-MediumItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../../build/fonts/Exo-MediumItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../../build/fonts/Exo-MediumItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+       url("../../build/fonts/Exo-MediumItalic.svg") format("svg"); /* Legacy iOS */
+}

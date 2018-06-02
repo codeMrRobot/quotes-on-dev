@@ -13,6 +13,8 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<button type="button" id="new-quote-button">Show Me Another!</button>
+			
 
 			<?php the_post_navigation(); ?>
 
