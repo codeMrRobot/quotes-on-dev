@@ -72,13 +72,20 @@ body{
 			padding-left:1rem;
 		}
 
+		.page-id-107{
+			entry-content p{
+			font-size:1rem;
+		 }
+	  }
+
 		.entry-content p{
-    	font-size: 1.75rem;
+    	font-size: 2.25rem;
  
 		}
 		.entry-content, .type-post{
 			font-size:1.6rem;
 		}
+
 		.site-branding{
 			a img{
 				width:500px;
@@ -91,7 +98,7 @@ body{
 	
 		// about page//
 		.page-id-107{
-			.entry-content{
+			.entry-content p{
 				font-size:1rem;
 			}
 		}
@@ -101,7 +108,7 @@ body{
 @media (min-width: 1080px){
 
 	.page-id-107{
-		.entry-content{
+		.entry-content p{
 			font-size:1rem;
 		}
 	}
@@ -173,6 +180,6 @@ body{
 }
 .single-post,.entry-title{
     display: inline;
-    font-size: 1.25rem;
-    font-weight: 400;    
+		font-weight: 400;
+		font-size:1rem;    
 }

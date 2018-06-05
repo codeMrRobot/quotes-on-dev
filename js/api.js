@@ -1,3 +1,6 @@
+/* global api_vars: true */
+/* eslint camelcase: off */
+
 (function($) {
 
   var lastPage='';
@@ -9,7 +12,7 @@
     })
       .done(function( data ) {
         //returns first post from the array
-        console.log(data[0]);
+        
         var post = data.shift();
         
 
@@ -70,7 +73,7 @@
             content: contentForm,
             _qod_quote_source: sourceForm,
             _qod_quote_source_url: sourceUrl,
-            status: "pending"
+            status: 'pending'
         },
         
         beforeSend: function(xhr) {

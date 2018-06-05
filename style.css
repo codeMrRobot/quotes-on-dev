@@ -440,6 +440,26 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.menu-stuff {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+@media (min-width: 620px) {
+  .menu-stuff {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
 /* Links */
 a {
   color: #00cc00; }
@@ -453,7 +473,6 @@ a {
     outline: 0; }
 
 .site-info {
-  width: 530px;
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: 0;
@@ -486,9 +505,18 @@ a {
   margin: 0; }
 
 .footer_navigation li {
-  border-right: 1px solid #fff;
   line-height: 1;
   padding: 0 1rem; }
+
+.footer_navigation li:not(:last-child) {
+  border-right: 1px solid #fff; }
+
+@media (min-width: 620px) {
+  .footer_navigation li {
+    border-right: 1px solid #fff; } }
+
+.footer_navigation li:nth-child(1) {
+  padding: 0 1rem 0 0; }
 
 .menu {
   display: -webkit-box;
@@ -530,13 +558,9 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  width: 1000px; }
+  display: block; }
   .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
+    list-style: none; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -583,8 +607,6 @@ a {
   display: block; }
 
 @media screen and (min-width: 620px) {
-  .menu-toggle {
-    display: block; }
   .main-navigation ul {
     display: block; }
   .menu li:nth-last-child(1) {
@@ -724,8 +746,10 @@ body {
   .red {
     margin: -4px;
     padding-left: 1rem; }
+  .page-id-107 entry-content p {
+    font-size: 1rem; }
   .entry-content p {
-    font-size: 1.75rem; }
+    font-size: 2.25rem; }
   .entry-content, .type-post {
     font-size: 1.6rem; }
   .site-branding a img {
@@ -733,11 +757,11 @@ body {
   .site-info {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
-  .page-id-107 .entry-content {
+  .page-id-107 .entry-content p {
     font-size: 1rem; } }
 
 @media (min-width: 1080px) {
-  .page-id-107 .entry-content {
+  .page-id-107 .entry-content p {
     font-size: 1rem; }
   .site-content {
     margin: 4.5rem 10rem 1.5rem;
@@ -793,8 +817,8 @@ body {
 
 .single-post, .entry-title {
   display: inline;
-  font-size: 1.25rem;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Media
@@ -839,9 +863,7 @@ object {
 .page-header .page-title {
   font-size: 2em; }
 
-.post-archives ul,
-.category-archives ul,
-.tag-archives ul {
+.post-archives ul, .category-archives ul, .tag-archives ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,20 +872,11 @@ object {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .post-archives ul li,
-  .category-archives ul li,
-  .tag-archives ul li {
+  .post-archives ul li, .category-archives ul li, .tag-archives ul li {
     padding-right: 1.5rem;
     font-size: 1.25rem; }
-    .post-archives ul li a,
-    .category-archives ul li a,
-    .tag-archives ul li a {
+    .post-archives ul li a, .category-archives ul li a, .tag-archives ul li a {
       text-decoration: none; }
-
-.single-post entry-title {
-  display: inline;
-  font-size: 1.25rem;
-  font-weight: 400; }
 
 /*--------------------------------------------------------------
 # Embedded Fonts
