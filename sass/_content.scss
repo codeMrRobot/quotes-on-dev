@@ -34,6 +34,10 @@
 	flex-direction: row;
 }
 
+.entry-content p{
+	font-size:1.25rem;
+}
+
 .logo{
 	text-align: center;
 }
@@ -101,6 +105,9 @@ body{
 			.entry-content p{
 				font-size:1rem;
 			}
+		}
+		.post-107{
+			margin-top: 3rem;
 		}
 
 }

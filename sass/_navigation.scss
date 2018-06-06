@@ -62,7 +62,7 @@ a {
 
 .footer_navigation li {
 	line-height: 1;
-	padding: 0 1rem;
+	padding: 0 0.5rem;
 }
 .footer_navigation li:not(:last-child){
 	border-right: 1px solid #fff;
@@ -73,7 +73,7 @@ a {
 	}
 }
 .footer_navigation li:nth-child(1){
-	padding:0 1rem 0 0;
+	padding:0 0.5rem 0 0;
 }
 
 .menu{
