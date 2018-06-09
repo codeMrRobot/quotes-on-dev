@@ -48,7 +48,7 @@ to refresh each time, it also uses a POST request to submit a new quote into the
 
 * Displayed on the Home page is a quote and button that on click would generate another random quote. Pressing this button triggers an    ajax request to the rest api, displaying a new random quote from the stored quotes contained in the blog posts.
 
-![](assets/quote.png)
+<img src="screenshots/quotes1.png" width="150px"><img src="screenshots/quotes2.png" width="150px"><img src="screenshots/quotes3.png" width="150px"><img src="screenshots/quotes4.png" width="150px"><img src="screenshots/quotes5.png" width="150px"><img src="screenshots/quotes6.png" width="150px">
 
 
 
