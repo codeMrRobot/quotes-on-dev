@@ -5,6 +5,12 @@ Quotes on Dev uses a custom Rest Api to randomly fetch and return posts when the
 is clicked. The front page uses a GET request to a WP API to dynamically add a new quote without having 
 to refresh each time, it also uses a POST request to submit a new quote into the site's database.
 
+## screenshot
+
+* Displayed on the Home page is a quote and button that on click would generate another random quote. Pressing this button triggers an ajax request to the rest api, displaying a new random quote from the stored quotes contained in the blog posts.
+
+<img src="screenshots/quotes1.png" width="150px"><img src="screenshots/quotes2.png" width="150px"><img src="screenshots/quotes3.png" width="150px"><img src="screenshots/quotes4.png" width="150px"><img src="screenshots/quotes5.png" width="150px"><img src="screenshots/quotes6.png" width="150px">
+
 ## Tech used
 
 * Wordpress
@@ -14,6 +20,10 @@ to refresh each time, it also uses a POST request to submit a new quote into the
 * PHP
 * Gulp
 * SASS/HTML
+
+## Set up
+
+* Install dependencies: > npm i
 
 ## Functionality
 
@@ -40,15 +50,7 @@ to refresh each time, it also uses a POST request to submit a new quote into the
 * Leverage the WP template hierarchy to generate required layouts for the website
 * Be validated with Theme Check
 
-## Set up
 
-* Install dependencies: > npm i
-
-## screenshot
-
-* Displayed on the Home page is a quote and button that on click would generate another random quote. Pressing this button triggers an    ajax request to the rest api, displaying a new random quote from the stored quotes contained in the blog posts.
-
-<img src="screenshots/quotes1.png" width="150px"><img src="screenshots/quotes2.png" width="150px"><img src="screenshots/quotes3.png" width="150px"><img src="screenshots/quotes4.png" width="150px"><img src="screenshots/quotes5.png" width="150px"><img src="screenshots/quotes6.png" width="150px">
 
 
 
