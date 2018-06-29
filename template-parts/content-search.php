@@ -13,7 +13,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php qod_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php qod_posted_by(); ?>
+			<?php echo get_post_time('l, jS F Y, h:i a'); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php echo get_the_author(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
